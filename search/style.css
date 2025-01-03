@@ -1,0 +1,13 @@
+div{
+    text-align: right;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 70vh;
+}
+#button{
+   display: flex;
+   justify-content: center;
+}

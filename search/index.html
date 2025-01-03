@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Search</title>
+        <style>
+            div{
+                text-align: right;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 70vh;
+                box-sizing: border-box;
+            }
+            input[type="text"]{
+                border-radius: 20px;
+                width: 700px;
+                height: 30px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                box-shadow: inset;
+            }
+            #button{
+               display: flex;
+               justify-content: center;
+               margin-top: 50px;
+            }
+        </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
+       <div>
+        <a href="./googleimage.html">Google ImageSearch</a>
+        <a href="./googleadvanced.html">Google AdvancedSearch</a>
+    </div>
+
+        <form action="https://www.google.com/search">
+           <div><input type="text" name="q">
+           </div>
+            <div id="button">
             <input type="submit" value="Google Search">
+        </div>
         </form>
     </body>
 </html>
