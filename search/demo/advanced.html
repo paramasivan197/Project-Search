@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced Search</h1>
+  </header>
+  <main>
+    <form class="advanced-search-form">
+      <!-- Search terms -->
+      <div class="form-group">
+        <label for="all-words">Find pages with...</label>
+        <input type="text" id="all-words" placeholder="All these words">
+      </div>
+      <div class="form-group">
+        <input type="text" id="exact-phrase" placeholder="This exact word or phrase">
+      </div>
+      <div class="form-group">
+        <input type="text" id="any-words" placeholder="Any of these words">
+      </div>
+      <div class="form-group">
+        <input type="text" id="none-words" placeholder="None of these words">
+      </div>
+      <div class="form-group">
+        <input type="text" id="numbers" placeholder="Numbers in this range">
+      </div>
+
+      <!-- Filters -->
+      <h2>Then narrow your results by...</h2>
+      <div class="form-group">
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="">Any language</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="region">Region:</label>
+        <select id="region">
+          <option value="">Any region</option>
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="last-update">Last update:</label>
+        <select id="last-update">
+          <option value="">Any time</option>
+          <option value="past-24-hours">Past 24 hours</option>
+          <option value="past-week">Past week</option>
+          <option value="past-month">Past month</option>
+          <option value="past-year">Past year</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="file-type">File type:</label>
+        <select id="file-type">
+          <option value="">Any format</option>
+          <option value="pdf">PDF</option>
+          <option value="doc">Microsoft Word</option>
+          <option value="ppt">PowerPoint</option>
+          <option value="xls">Excel</option>
+        </select>
+      </div>
+
+      <!-- Submit button -->
+      <div class="form-actions">
+        <button type="submit">Advanced Search</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
